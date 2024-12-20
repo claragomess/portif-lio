@@ -3,6 +3,10 @@
     font-family: 'Clara';
     src: url('./SoundsGood.ttf');
 }
+@font-face{
+    font-family: 'texto2';
+    src: ('./geo_sans_light.ttf');
+}
 body{
     font-family: 'Clara';
 }
@@ -18,7 +22,8 @@ html{
 body{
     margin: 0;
     font-family: 'Clara';
-    background-color: #043910d5;
+    background: linear-gradient(45deg,#0D1E20, #313E2A, #0D1E20);
+    min-height: 2000px;
     color: #cb431d;
 }
 header{
@@ -27,23 +32,38 @@ header{
     padding: 10px 20px;
     background: transparent;
 }
-.contact-info p{
-    margin: 0 15 px;
-    font-size: 14px; 
-    
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #cb431d;
+    gap: 15px;
 
 }
+.contact-info p{
+    margin: 0 15px;
+    font-size: 14px;  
+    gap: 100px;
+    color: #cb431d;
+}
+
 main{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 150px auto;
 }
 .content{
     max-width: 50%;
 
+   
+
+}
+.texto{
+    font-family: 'texto2';
 }
 h1{
     font-size: 3rem;
@@ -70,9 +90,37 @@ button{
 button:hover{
     background-color: #e65c00;
 }
-.photo.img{
+.photo{
     max-width: 100%;
-    border: 5px solid #ff6600;
+    border: 1px solid #ff6600;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+
+
+}
+.imagebox{
+    border: 2.5px solid #cb431d;
+}
+.boxline1{
+    width: 355px;
+    height: 415px;
+    border: 1px solid #cb431d;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+}
+
+.boxline2{
+    width: 355px;
+    height: 420px;
+    border: 1px solid #cb431d;
+    top: 15px;
+    right:-20px;
+    position: absolute;
+}
+.boxline3{
+    width: 355px;
+    height: 415px;
+    border: 1px solid #cb431d;
+    position: relative;
 }
